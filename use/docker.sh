@@ -8,6 +8,7 @@ docker build \
 docker run \
 	--name=$container \
 	-ti -d \
+	-p 8080:8080 \
 	--tmpfs /run \
 	--tmpfs /run/lock \
 	--tmpfs /tmp \
